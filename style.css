@@ -11,7 +11,7 @@ html,body {
 body {
     background-color: #212121;
 }
-img {
+.avatar {
     width: 100px;
     border-radius: 50%;
 }
@@ -22,10 +22,14 @@ header {
     padding-top: 20px;
 }
 
-h1,h2,p {
+h1,h2 {
     text-align: center;
-    color: rgb(134, 81, 233);
+    color: rgb(93, 38, 196);
     font-family: 'Fjalla One', sans-serif;
+}
+
+h2 {
+    color: rgb(111, 202, 195);
 }
 
 .social {
@@ -42,9 +46,11 @@ h1,h2,p {
 .load {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+   padding-bottom: 15px;
+    
 }
-/* From uiverse.io by @gagan-gv */
+
+
 .loader span {
     font-size: 22px;
     font-family: 'Courier New', Courier, monospace;
@@ -69,24 +75,83 @@ h1,h2,p {
 }
 
 .menu {
-    margin-top: 30px;
+    margin-top: 10px;
     display: grid;
     justify-content: center;
 
 }
 
-/* From uiverse.io by @Sujitkavaiya */
+
 .card {
     width: 300px;
     height: 154px;
-    background: rgb(255, 255, 255);
+    background: rgb(245, 242, 234);
     border-radius: 0.4em;
     box-shadow: 0.3em 0.3em 0.7em #00000015;
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: rgb(250, 250, 250) 0.2em solid;
-    margin: 10px;
+    margin-top: 35px;
 }
 
 .card:hover {
     border: #5d25a7 0.2em solid;
+}
+
+
+/*Basic structure of slider*/
+.container {
+    width: 300px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: -1px 5px 15px black;
+}
+
+/*Area of images*/
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+img {
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
 }
