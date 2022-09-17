@@ -31,6 +31,11 @@ h1,h2 {
 h2 {
     color: rgb(111, 202, 195);
 }
+h3 {
+    color: #5124b3;
+    text-align: center;
+    font-size: x-large;
+}
 
 .social {
     display: flex;
@@ -85,7 +90,7 @@ h2 {
 .card {
     width: 300px;
     height: 154px;
-    background: rgb(245, 242, 234);
+    background: #fff;
     border-radius: 0.4em;
     box-shadow: 0.3em 0.3em 0.7em #00000015;
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
